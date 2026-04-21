@@ -1,0 +1,7 @@
+{
+	"type": "exe",
+	"reference": "../Test4",
+	"release": {
+		"compilerFlags": "/O2",
+	}
+}

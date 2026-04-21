@@ -1,0 +1,1 @@
+Console.WriteLine("Hello, World!");Test3 t3 = new();t3.Test();

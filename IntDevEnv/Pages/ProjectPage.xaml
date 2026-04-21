@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IntDevEnv.Pages.ProjectPage">
+
+    <Grid ColumnDefinitions="280,*"
+          RowDefinitions="*,120"
+          ColumnSpacing="2"
+          RowSpacing="2"
+          Padding="12">
+
+        <Border Grid.RowSpan="2"
+                Stroke="#d0d7de"
+                StrokeThickness="1"
+                Padding="0">
+            <CollectionView x:Name="CommandList"
+                            SelectionMode="Single"
+                            SelectionChanged="OnCommandSelectionChanged">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Padding="10,8">
+                            <Label Text="{Binding CommandText}"
+                                   LineBreakMode="WordWrap" />
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Border>
+
+        <Border Grid.Column="1"
+                Stroke="#d0d7de"
+                StrokeThickness="1"
+                Padding="0">
+			<Editor x:Name="SourceEditor"
+                    IsReadOnly="False"
+                    AutoSize="Disabled"
+                    FontFamily="Courier New"
+                    Placeholder="Source code will appear here." />
+
+		</Border>
+
+        <Border Grid.Row="1"
+                Grid.Column="1"
+                Stroke="#d0d7de"
+                StrokeThickness="1"
+                Padding="0">
+            <Editor x:Name="OutputEditor"
+                    IsReadOnly="True"
+                    AutoSize="Disabled"
+                    FontFamily="Courier New"
+                    Placeholder="Command output will appear here." />
+        </Border>
+    </Grid>
+
+</ContentPage>

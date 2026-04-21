@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ConsoleApp3/ConsoleApp3.vcxproj" Id="8ac35129-e06c-425e-a7dd-36dff5da3044" />
+  <Project Path="ConsoleApp4/ConsoleApp4.csproj">
+    <Platform Project="x64" />
+  </Project>
+  <Project Path="IntDevEnv/IntDevEnv.csproj" Id="b66bdf6d-3bc0-4587-9b3d-f2ea643a149d">
+    <Deploy Solution="*|Any CPU" />
+  </Project>
+  <Project Path="ManagedConsole/ManagedConsole.vcxproj" Id="d9a45713-b64e-7e59-39cb-7a77bbe44754" />
+  <Project Path="MonitorConsole/MonitorConsole.vcxproj" Id="78f080b3-7a7d-484b-b1ad-e8702571d4a6" />
+</Solution>

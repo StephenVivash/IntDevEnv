@@ -1,0 +1,6 @@
+{
+	"compilerFlags": "/clr",
+	"release": {
+		"compilerFlags": "/O2",
+	}
+}

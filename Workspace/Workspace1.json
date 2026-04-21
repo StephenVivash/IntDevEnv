@@ -1,0 +1,20 @@
+{
+  "project": "Test3",
+  "projects": [
+    {
+      "path": "Test4"
+    },
+    {
+      "path": "Test2"
+    },
+    {
+      "path": "Test1"
+    },
+    {
+      "path": "Test3"
+    },
+    {
+      "path": "Test5"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="IntDevEnv.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:IntDevEnv"
+    xmlns:pages="clr-namespace:IntDevEnv.Pages"
+    Shell.FlyoutBehavior="Disabled"
+    >
+
+    <!--FlyoutItem Route="ProjectPage">
+        <ShellContent
+			x:Name="pagProject"
+			Shell.NavBarIsVisible="false"
+			Title="Project"
+			Icon="iconlistdetail.png"
+			ContentTemplate="{DataTemplate local:ProjectPage}"
+			Route="ProjectPageRoot" />
+    </FlyoutItem>
+
+    <FlyoutItem Route="MainPage">
+        <ShellContent
+			x:Name="pagMain"
+			Shell.NavBarIsVisible="false"
+			Title="Main"
+			Icon="iconlistdetail.png"
+			ContentTemplate="{DataTemplate local:MainPage}"
+			Route="MainPageRoot" />
+    </FlyoutItem-->
+
+    <ShellContent
+        ContentTemplate="{DataTemplate pages:WorkspacePage}"
+        Route="WorkspacePage" />
+    <ShellContent
+        ContentTemplate="{DataTemplate pages:ProjectPage}"
+        Route="ProjectPage" />
+
+</Shell>

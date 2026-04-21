@@ -1,0 +1,7 @@
+{
+	"type": "dll",
+	"defines": "DLL_EXPORTS",
+	"release": {
+		"compilerFlags": "/O2",
+	}
+}
