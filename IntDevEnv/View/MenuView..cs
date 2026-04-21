@@ -15,8 +15,8 @@ public partial class MenuView : ContentView
 	private StackLayout? _slMenu;
 
 	private ButtonEx? _btnClean;
-	private ButtonEx? _btnBuild;
-	private ButtonEx? _btnBuildAll;
+	private ButtonEx? _btnRebuild;
+	private ButtonEx? _btnRebuildAll;
 	private ButtonEx? _btnRun;
 	private ButtonEx? _btnSetting;
 
@@ -87,11 +87,11 @@ public partial class MenuView : ContentView
         {
             Icon = FluentIcons.Delete,
         };
-        _btnBuild = new ButtonEx()
+        _btnRebuild = new ButtonEx()
         {
             Icon = FluentIcons.Lightning,
         };
-        _btnBuildAll = new ButtonEx()
+        _btnRebuildAll = new ButtonEx()
         {
             Icon = FluentIcons.Repeat,
         };
@@ -127,22 +127,22 @@ public partial class MenuView : ContentView
 		border.Content = _slMenu;
 
 		ToolTipProperties.SetText(_btnClean, "Clean");
-		ToolTipProperties.SetText(_btnBuild, "Build");
-		ToolTipProperties.SetText(_btnBuildAll, "Build All");
+		ToolTipProperties.SetText(_btnRebuild, "Rebuild");
+		ToolTipProperties.SetText(_btnRebuildAll, "Rebuild All");
 		ToolTipProperties.SetText(_btnRun, "Run");
 		ToolTipProperties.SetText(_btnSetting, "Settings");
 
 		_slMenu.Children.Add(_btnClean);
-		_slMenu.Children.Add(_btnBuild);
-		_slMenu.Children.Add(_btnBuildAll);
+		_slMenu.Children.Add(_btnRebuild);
+		_slMenu.Children.Add(_btnRebuildAll);
 		_slMenu.Children.Add(_btnRun);
 		_slMenu.Children.Add(_btnSetting);
 		_slMenu.Children.Add(_pkProject);
 		_slMenu.Children.Add(_pkMode);
 
         _btnClean.Clicked += btnClean_Clicked	!;
-		_btnBuild.Clicked += btnBuild_Clicked!;
-		_btnBuildAll.Clicked += btnBuildAll_Clicked!;
+		_btnRebuild.Clicked += btnRebuild_Clicked!;
+		_btnRebuildAll.Clicked += btnRebuildAll_Clicked!;
 		_btnRun.Clicked += btnRun_Clicked!;
 		_btnSetting.Clicked += btnSetting_Clicked!;
 
@@ -194,14 +194,14 @@ public partial class MenuView : ContentView
 		UI.Call<WorkspacePage>(p => p.OnClean());
 	}
 
-	private void btnBuild_Clicked(object sender, EventArgs e)
+	private void btnRebuild_Clicked(object sender, EventArgs e)
 	{
-        UI.Call<WorkspacePage>(p => p.OnBuild());
+        UI.Call<WorkspacePage>(p => p.OnRebuild());
 	}
 
-	private void btnBuildAll_Clicked(object sender, EventArgs e)
+	private void btnRebuildAll_Clicked(object sender, EventArgs e)
 	{
-		UI.Call<WorkspacePage>(p => p.OnBuildAll());
+		UI.Call<WorkspacePage>(p => p.OnRebuildAll());
 	}
 
 	private void btnRun_Clicked(object sender, EventArgs e)
