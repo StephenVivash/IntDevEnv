@@ -76,8 +76,8 @@
 	<ItemGroup>
 		<!--PackageReference Include="CommunityToolkit.Maui" Version="9.1.1" /-->
 		<PackageReference Include="CommunityToolkit.Maui" Version="14.1.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.51" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.6" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.60" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.7" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(IsWindowsTarget)' == 'true'">
