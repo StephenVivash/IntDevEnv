@@ -19,7 +19,7 @@ public partial class WorkspacePage : ContentPage
 	static String _vsVersion = @"14.51.36231";
 	static String _sdkVersion = @"10.0.19041.0";
 	//static String _sdkVersion = @"10.0.26100.0";
-	
+
 	static String _vsPath = $"{_vsBasePath}{_msvcPath}{_vsVersion}\\";
 	static String _sdkPath = @"C:\Program Files (x86)\Windows Kits\10\";
 	static String _clrPath = @"C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\";
@@ -135,12 +135,12 @@ public partial class WorkspacePage : ContentPage
 	}
 #endif
 
-    private bool DebugMode()
-    {
-        return horMenu.Mode == "Debug";
-    }
+	private bool DebugMode()
+	{
+		return horMenu.Mode == "Debug";
+	}
 
-    protected override void OnSizeAllocated(double width, double height)
+	protected override void OnSizeAllocated(double width, double height)
 	{
 		if ((width == -1) || (height == -1))
 			return;
@@ -602,7 +602,7 @@ public partial class WorkspacePage : ContentPage
 			_workspace.Add(new WorkspaceItem(Path.GetFileName(projectFile), projectFile, WorkspaceItemType.File, depth));
 		}
 	}
-	
+
 	private string DetectProjectType(string rootPath)
 	{
 		List<string> projectFiles = EnumerateProjectFiles(rootPath).ToList();
@@ -709,7 +709,7 @@ public partial class WorkspacePage : ContentPage
 
 	private static string GetWorkspaceManifestPath()
 	{
-		return Path.Combine(_workspacePath,	Path.HasExtension(_workspaceFile) ? _workspaceFile : $"{_workspaceFile}.json");
+		return Path.Combine(_workspacePath, Path.HasExtension(_workspaceFile) ? _workspaceFile : $"{_workspaceFile}.json");
 	}
 
 #if WINDOWS

@@ -27,16 +27,16 @@ public partial class ProjectPage : ContentPage
 			$"/I \"{vsPath}\\VC\\Tools\\MSVC\\{vsVersion}\\include\" " +
 			$"/I \"{sdkPath}\\include\\{sdkVersion}\\ucrt\" " +
 
-            $"\"{workspacePath}\\{projectName}\\{projectName}.{projectExtension}\" " +
-			
-            $"/link " +
+			$"\"{workspacePath}\\{projectName}\\{projectName}.{projectExtension}\" " +
+
+			$"/link " +
 			$"\"{vsPath}\\VC\\Tools\\MSVC\\{vsVersion}\\lib\\x64\\LIBCMT.lib\" " +
 			$"\"{vsPath}\\VC\\Tools\\MSVC\\{vsVersion}\\lib\\x64\\LIBCpMT.lib\" " +
 			$"\"{vsPath}\\VC\\Tools\\MSVC\\{vsVersion}\\lib\\x64\\OLDNAMES.lib\" " +
-            $"\"{vsPath}\\VC\\Tools\\MSVC\\{vsVersion}\\lib\\x64\\libvcruntime.lib\" " +
-            $"\"{sdkPath}\\lib\\{sdkVersion}\\ucrt\\x64\\libucrt.lib\" " +
-            $"\"{sdkPath}\\lib\\{sdkVersion}\\um\\x64\\kernel32.lib\" " +
-            $"\"{sdkPath}\\lib\\{sdkVersion}\\um\\x64\\uuid.lib\""),
+			$"\"{vsPath}\\VC\\Tools\\MSVC\\{vsVersion}\\lib\\x64\\libvcruntime.lib\" " +
+			$"\"{sdkPath}\\lib\\{sdkVersion}\\ucrt\\x64\\libucrt.lib\" " +
+			$"\"{sdkPath}\\lib\\{sdkVersion}\\um\\x64\\kernel32.lib\" " +
+			$"\"{sdkPath}\\lib\\{sdkVersion}\\um\\x64\\uuid.lib\""),
 
 		//$"cmd.exe /c \"cd /d \"{projectsPath}\\{projectName}\" "
 	];
