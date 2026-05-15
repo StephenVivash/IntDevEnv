@@ -86,6 +86,10 @@
 		</ProjectReference>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Common\Gui\Gui.csproj" />
+	</ItemGroup>
+
 	<Target Name="CopyManagedConsoleNativeDependencies" AfterTargets="Build" Condition="'$(TargetDir)' != '' and '$(IsWindowsTarget)' == 'true'">
 		<ItemGroup>
 			<ManagedConsoleNativeDependency Include="..\x64\$(Configuration)\MonitorConsole.dll" Condition="Exists('..\x64\$(Configuration)\MonitorConsole.dll')" />

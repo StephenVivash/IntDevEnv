@@ -1,8 +1,10 @@
-using IntDevEnv.Services;
-using IntDevEnv.Views;
 using System.Collections.ObjectModel;
 using System.Text;
 using System.Text.Json;
+
+using IntDevEnv.Views;
+using IntDevEnv.Services;
+using Gui.Services;
 
 namespace IntDevEnv.Pages;
 

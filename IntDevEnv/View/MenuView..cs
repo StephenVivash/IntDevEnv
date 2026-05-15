@@ -1,9 +1,12 @@
 
-using CommunityToolkit.Maui.Core;
-using IntDevEnv.Controls;
-using IntDevEnv.Pages;
-using IntDevEnv.Services;
 using System.Collections.ObjectModel;
+using CommunityToolkit.Maui.Core;
+
+using IntDevEnv.Services;
+using IntDevEnv.Pages;
+
+using Gui.Controls;
+using Gui.Services;
 
 namespace IntDevEnv.Views;
 
@@ -68,7 +71,7 @@ public partial class MenuView : ContentView
 		var b = new RegisterInViewDirectoryBehavior() { Key = $"{ePage}{o}Menu" };
 		Behaviors.Add(b);
 
-		_ePage = ePage;
+		//_ePage = ePage;
 
 		Border border = new()
 		{
