@@ -75,15 +75,19 @@
 
 	<ItemGroup>
 		<!--PackageReference Include="CommunityToolkit.Maui" Version="9.1.1" /-->
-		<PackageReference Include="CommunityToolkit.Maui" Version="14.1.0" />
-		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.51" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.6" />
+		<PackageReference Include="CommunityToolkit.Maui" Version="14.1.1" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="10.0.60" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.8" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(IsWindowsTarget)' == 'true'">
 		<ProjectReference Include="..\ManagedConsole\ManagedConsole.vcxproj">
 			<SetPlatform>Platform=x64</SetPlatform>
 		</ProjectReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Common\Gui\Gui.csproj" />
 	</ItemGroup>
 
 	<Target Name="CopyManagedConsoleNativeDependencies" AfterTargets="Build" Condition="'$(TargetDir)' != '' and '$(IsWindowsTarget)' == 'true'">
