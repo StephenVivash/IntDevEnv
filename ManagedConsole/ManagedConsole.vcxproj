@@ -24,7 +24,8 @@
     <ProjectGuid>{D9A45713-B64E-7E59-39CB-7A77BBE44754}</ProjectGuid>
     <Keyword>NetCoreCProj</Keyword>
     <RootNamespace>ManagedConsole</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>
+    </WindowsTargetPlatformVersion>
     <TargetFramework>net10.0</TargetFramework>
     <RuntimeIdentifiers>win-x64;win-x86</RuntimeIdentifiers>
   </PropertyGroup>
