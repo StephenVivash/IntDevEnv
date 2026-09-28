@@ -19,8 +19,8 @@ public partial class WorkspacePage : ContentPage
 	//static String _vsVersion = @"14.44.35207";
 	//static String _vsVersion = @"14.50.35717";
 	static String _vsVersion = @"14.51.36231";
-	static String _sdkVersion = @"10.0.19041.0";
-	//static String _sdkVersion = @"10.0.26100.0";
+	//static String _sdkVersion = @"10.0.19041.0";
+	static String _sdkVersion = @"10.0.26100.0";
 
 	static String _vsPath = $"{_vsBasePath}{_msvcPath}{_vsVersion}\\";
 	static String _sdkPath = @"C:\Program Files (x86)\Windows Kits\10\";
