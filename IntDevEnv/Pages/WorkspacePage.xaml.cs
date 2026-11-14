@@ -14,7 +14,7 @@ public partial class WorkspacePage : ContentPage
 	static String _workspacePath = @"C:\Src\IntDevEnv\Workspace";
 	static String _workspaceFile = @"Workspace1";
 
-	static String _vsBasePath = @"C:\Program Files\Microsoft Visual Studio\18\Community\"; // Community Insiders
+	static String _vsBasePath = @"C:\Program Files\Microsoft Visual Studio\18\Insiders\"; // Community Insiders
 	static String _msvcPath = @"VC\Tools\MSVC\";
 	//static String _vsVersion = @"14.44.35207";
 	//static String _vsVersion = @"14.50.35717";

@@ -2,15 +2,15 @@ namespace IntDevEnv.Services;
 
 internal sealed class ProjectRunService
 {
-	private const string ManagedBuildTargetFolder = "net10.0";
+	private const string ManagedTargetFramework = "net11.0";
 
 	public string CreateRunCommand(WorkspaceItem project, bool debug)
 	{
 		string configuration = ProjectBuildService.GetBuildConfigurationName(debug);
-		string csProjectPath = Path.Combine(project.Path, "bin", configuration, ManagedBuildTargetFolder, $"{project.Name}.exe");
+		string csProjectPath = Path.Combine(project.Path, "bin", configuration, ManagedTargetFramework, $"{project.Name}.exe");
 
 		if (project.ProjectType == "cs" && !File.Exists(csProjectPath))
-			return "dotnet run --framework net10.0"; // -windows10.0.19041.0
+			return $"dotnet run --framework {ManagedTargetFramework} --configuration {configuration}";
 
 		string executablePath = project.ProjectType switch
 		{
